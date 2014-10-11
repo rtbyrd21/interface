@@ -1,0 +1,43 @@
+#example {
+  @include span(5);
+  padding-top:185px;
+  font-size:.75rem;
+  span{
+  color:$red;
+  display: block;
+  margin-bottom: 125px;
+  }
+} //example
+
+#login{
+font-size:.75rem;
+padding-top: 15px;
+@include span(3);
+color:$grey;
+z-index: 3;
+  &:hover{
+  color:black;
+  }
+  form{
+  padding-left:10px;
+    input{
+    margin-left: 10px;
+    box-shadow: 0px 0px 0px $yellow;
+    border-style:solid;
+    border:none;
+    border-width:1px;
+    border: 1px solid $yellow;
+      &:hover{
+      #login{
+        color:black;
+      }
+    }
+    }
+    &:hover{
+      #login{
+        color:black;
+      }
+    }
+  }
+  
+}

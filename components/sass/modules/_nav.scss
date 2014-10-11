@@ -1,0 +1,65 @@
+header #nav {
+  @include clearfix;
+  
+  width: 100%;
+  z-index: 100;
+  position: absolute;
+  top:0;
+  .navbackground{
+  @include span(3.5 at 2 of 12 isolate);
+  background-color: $yellow;
+  height:35px;
+  }
+  .navbar {
+    z-index: 2;
+    @include container;
+    @include span(12 of 12);
+    
+    //@include background-image(linear-gradient(top, $yellow, $yellow));
+    position: absolute;
+    top:0px;
+    background-position: 20% 20%;
+    ul {
+      @include span(5 at 2 of 12 isolate);
+      //@include pad(5);
+      
+      li {
+        float: left;
+        background-color: none;
+        display: inline-block;
+        &:last-child{
+        @include clearfix;
+        background-color: $orange;
+        padding-right: 0px;
+        height:35px;
+          &:hover{
+          height:35px;
+          background-color: $red;
+          }
+        }
+        a {
+          color: black;
+          font: $mainFont;
+          font-size: .75em;
+          display: inline-block;
+          padding: 15px 10px 10px 10px;
+          text-decoration: none;
+        &:hover{
+          background-color: rgba(255,241,0,.5);
+          .secondary{
+          color:black;
+          }
+        }
+       
+
+        } //a
+      } //li
+      
+    } //ul
+  } //navbar
+} //header #nav
+
+.secondary{
+float:right;
+color:darken($grey,30);
+}

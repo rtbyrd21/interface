@@ -1,0 +1,14 @@
+#current {
+  @include span(2);
+  padding-top:230px;
+  font-size: .7rem;
+  padding-right: 30px;
+  color:$grey;
+  .image{
+  height: 110px;
+  width:85%;
+  background-color: $grey;
+  margin-bottom: 20px;
+  }
+
+} //dining
