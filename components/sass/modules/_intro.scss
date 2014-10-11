@@ -220,3 +220,25 @@ border: 3px solid #84d865;
 input.ng-pristine{
 border: 3px solid $orange;
 }
+
+button{
+@include single-transition;
+}
+
+button.check{
+@include border-radius(50%);
+background: $green;
+color:white;
+float:left;
+border:2px solid white;
+@include single-transition;
+margin-bottom: 15px;
+left: 215px;
+position: absolute;
+}
+
+button[disabled]{
+cursor: default;
+background: white;
+display:none;
+}
